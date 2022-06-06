@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,300;1,400&family=Water+Brush&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $cor-primaria;
+}
+
+nav {
+  margin-top: -80px !important;
+  //margin-bottom: 70px;
+  height: 50px;
+  background-color: $cor-primaria;
+}
+
+main {
+  .content {
+    
+    background-color: $cor-secundaria;
+    padding-bottom: 100px;
+    h2{
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+    }
+    p{
+      padding: 10px 100px;
+      text-align: center;
+      margin-top: 30px;
+      color: white;
+    }
+  }
+  .deactived{
+    display: none;
+  }
+}
+
+footer {
+  height: 200px;
+  background: $cor-secundaria;
+}
+
+.container {
+  width: 1024;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 5%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}

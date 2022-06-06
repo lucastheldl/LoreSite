@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <title>Nevull</title>
+  </head>
+
+  <body>
+    <header>
+      <section class="container">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </section>
+    </header>
+
+    <!--Banner principal-->
+    <div class="banner">
+      <img src="./assets/images/stars.png" id="stars" />
+      <img src="./assets/images/Back.png" id="background" />
+      <img src="./assets/images/CaosDragon.png" id="character" />
+      <img src="./assets/images/foreground.png" id="foreground" />
+    </div>
+    <!--End Banner principal-->
+
+    <!--nav-->
+    <nav class="container"></nav>
+    <!--End nav-->
+
+    <main class="container">
+      <!--Cards-->
+      <section class="row" id="stories">
+        <a
+          href="#content"
+          class="card"
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="1.1"
+          onclick="changeDisplay('content')"
+        >
+          <div class="card-image">
+            <img src="./assets/images/ChaosDragMin.jpg" />
+          </div>
+          <h3>Chaos Rush</h3>
+        </a>
+        <a
+          href="#content2"
+          class="card"
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="1.1"
+          onclick="changeDisplay('content2')"
+        >
+          <div class="card-image">
+            <img src="./assets/images/tellarrebelion.jpg" />
+          </div>
+          <h3>TellarRebelion</h3>
+        </a>
+        <a
+          href="#content3"
+          class="card"
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="1.1"
+          onclick="changeDisplay('content3')"
+        >
+          <div class="card-image">
+            <img src="./assets/images/UltimateDinoFinal_2.jpg" />
+          </div>
+          <h3>Dinasvora</h3>
+        </a>
+        <a
+          href="#content4"
+          class="card"
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="1.1"
+          onclick="changeDisplay('content4')"
+        >
+          <div class="card-image">
+            <img src="./assets/images/light dragon.jpg" />
+          </div>
+          <h3>Rise of the light</h3>
+        </a>
+        <a
+          href="#content5"
+          class="card"
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="1.1"
+          onclick="changeDisplay('content5')"
+        >
+          <div class="card-image">
+            <img src="./assets/images/TreeOFtheGodness.jpg" />
+          </div>
+          <h3>Tree of Eternity</h3>
+        </a>
+      </section>
+
+      <section class="content container deactived" id="content">
+        <div class="banner-content">
+          <img src="./assets/images/page-banner.jpg" alt="" />
+        </div>
+        <h2>Soon...</h2>
+        <p>Comming soon...</p>
+      </section>
+      <section class="content container" id="content2">
+        <div class="banner-content">
+          <img src="./assets/images/page-banner.jpg" alt="" />
+        </div>
+        <h2>TellarRebelion</h2>
+        <p>
+          TellarRebels are a team of galactic warriors who have combined their
+          great powers and abilities to initiate a rebellion and take control of
+          the galaxy.<br /><br />
+          -After battling tousands and thousands of enemies in the imperial
+          mothership, the tellarebels manage to defeat the dark king, and who
+          deals the finish blow would become the new king,suddenly a spear is
+          launched from behind everyone and kills the king... It was Fuwen he
+          now posses the powers of the king and begin to fight the TellarRebels.
+          The last battle was intense but in the end Fuwen wins by killing all
+          of them. Before Artemia's death she swear that she will stop Fuwen one
+          day.<br /><br />
+          -After betraying his friends, Fuwen reach his goals by becoming the
+          new Ruler of Darkness. . The story continues in The Ruler of Darkness
+          Lore.[Soon...]<br /><br />
+        </p>
+      </section>
+      <section class="content container deactived" id="content3">
+        <div class="banner-content">
+          <img src="./assets/images/page-banner.jpg" alt="" />
+        </div>
+        <h2>Soon...</h2>
+        <p>Comming soon...</p>
+      </section>
+      <section class="content container deactived" id="content4">
+        <div class="banner-content">
+          <img src="./assets/images/page-banner.jpg" alt="" />
+        </div>
+        <h2>Soon...</h2>
+        <p>Comming soon...</p>
+      </section>
+      <section class="content container deactived" id="content5">
+        <div class="banner-content">
+          <img src="./assets/images/page-banner.jpg" alt="" />
+        </div>
+        <h2>Soon...</h2>
+        <p>Comming soon...</p>
+      </section>
+      <!--End Cards-->
+    </main>
+
+    <footer id="contact"></footer>
+
+    <script type="text/javascript" src="./assets/js/vanilla-tilt.js"></script>
+    <script>
+      let stars = window.document.querySelector("img#stars");
+      let back = window.document.querySelector("img#background");
+      let mBack = window.document.querySelector("img#character");
+      //let text = window.document.querySelector("h2#text")
+      //let btn = window.document.querySelector("a#btn")
+      let mFront = window.document.querySelector("img#foreground");
+      // let header = window.document.querySelector("header")
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + "px";
+        back.style.top = value * 0.8 + "px";
+        mBack.style.top = value * 0.5 + "px";
+        mFront.style.top = value * 0 + "px";
+        //text.style.marginRight = value * 3 + 'px';
+        // btn.style.marginTop = value * 1 + 'px';
+        //header.style.top = value * 0.5 + 'px';
+      });
+
+      function changeDisplay(id) {
+        let itemList = window.document.getElementsByClassName("content");
+
+        for (let index = 0; index < itemList.length; index++) {
+          if (itemList[index].id != id) {
+            itemList[index].style.display = "none";
+          } else {
+            itemList[index].style.display = "block";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
