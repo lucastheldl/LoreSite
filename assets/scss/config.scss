@@ -45,6 +45,19 @@ main {
 footer {
   height: 200px;
   background: $cor-secundaria;
+  section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    a{
+      margin: 80px 50px 0 50px;
+      img{
+        height: 30px;
+        width: 30px;
+      }
+      }
+  }
 }
 
 .container {
