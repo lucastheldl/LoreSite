@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <!--Nav-->
     <header>
       <section class="container">
         <ul>
@@ -18,19 +19,20 @@
         </ul>
       </section>
     </header>
+    <!--End Nav-->
 
     <!--Banner principal-->
-    <div class="banner">
+    <div class="banner" id="bannerPrim">
       <img src="./assets/images/stars.png" id="stars" />
       <img src="./assets/images/Back.png" id="background" />
       <img src="./assets/images/CaosDragon.png" id="character" />
       <img src="./assets/images/foreground.png" id="foreground" />
     </div>
-    <!--End Banner principal-->
 
-    <!--nav-->
-    <nav class="container"></nav>
-    <!--End nav-->
+    <div style="display: none" class="banner" id="bannerSec">
+      <img src="./assets/images/ChaosDragMin.jpg" />
+    </div>
+    <!--End Banner principal-->
 
     <main class="container">
       <!--Cards-->
@@ -102,6 +104,7 @@
         </a>
       </section>
       <!--End Cards-->
+
       <!--Stack-->
       <section style="display: none" class="container" id="storiesStack">
         <a href="#content" class="stack" onclick="changeDisplay('content')">

@@ -230,6 +230,14 @@ header ul li a:hover {
   #storiesStack {
     display: block !important;
   }
+
+  #bannerPrim {
+    display: none !important;
+  }
+
+  #bannerSec {
+    display: block !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
