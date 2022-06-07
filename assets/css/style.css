@@ -69,13 +69,9 @@ footer section a img {
 }
 
 header {
-  position: absolute;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 1024px;
   padding: 30px 100px;
   z-index: 1000;
 }
@@ -111,7 +107,7 @@ header ul li a:hover {
   align-items: center;
   overflow: hidden;
   background: rgb(50, 32, 95);
-  overflow-x: hidden;
+  margin-top: -150px;
 }
 .banner img {
   position: absolute;
@@ -202,6 +198,38 @@ header ul li a:hover {
 
 .js-tilt-glare {
   border-radius: 20px;
+}
+
+#storiesStack .stack {
+  position: relative;
+  color: white;
+}
+#storiesStack .stack .card-image {
+  width: 100%;
+  height: 100px;
+}
+#storiesStack .stack .card-image img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+#storiesStack .stack h3 {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  text-shadow: 0 0 3px black;
+}
+
+@media only screen and (max-width: 960px) {
+  #stories {
+    display: none;
+  }
+
+  #storiesStack {
+    display: block !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
