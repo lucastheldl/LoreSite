@@ -92,6 +92,8 @@ header ul li a {
   border-radius: 20px;
   color: white;
   scroll-behavior: smooth;
+  font-weight: bold;
+  font-size: 18px;
 }
 header ul li a:hover {
   background: white;
