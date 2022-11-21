@@ -54,43 +54,85 @@
         <i class="fa-solid fa-chevron-left arrowbtn" id="left"></i>
 
         <div class="carousel row">
-          <a href="#content" class="card" data-tilt data-tilt-glare>
+          <a
+            href="#content"
+            class="card"
+            data-tilt
+            data-tilt-glare
+            onclick="changeDisplay('content')"
+          >
             <div class="card-image">
               <img src="./assets/images/ChaosDragMin.jpg" />
             </div>
             <h3>Chaos Rush</h3>
           </a>
-          <a href="#content2" class="card" data-tilt data-tilt-glare>
+          <a
+            href="#content2"
+            class="card"
+            data-tilt
+            data-tilt-glare
+            onclick="changeDisplay('content2')"
+          >
             <div class="card-image">
               <img src="./assets/images/tellarrebelion.jpg" />
             </div>
             <h3>TellarRebelion</h3>
           </a>
-          <a href="#content3" class="card" data-tilt data-tilt-glare>
+          <a
+            href="#content3"
+            class="card"
+            data-tilt
+            data-tilt-glare
+            onclick="changeDisplay('content3')"
+          >
             <div class="card-image">
               <img src="./assets/images/UltimateDinoFinal_2.jpg" />
             </div>
             <h3>Dinasvora</h3>
           </a>
-          <a href="#content4" class="card" data-tilt data-tilt-glare>
+          <a
+            href="#content4"
+            class="card"
+            data-tilt
+            data-tilt-glare
+            onclick="changeDisplay('content4')"
+          >
             <div class="card-image">
               <img src="./assets/images/light dragon.jpg" />
             </div>
             <h3>Rise of the light</h3>
           </a>
-          <a href="#content4" class="card" data-tilt data-tilt-glare>
+          <a
+            href="#content4"
+            class="card"
+            data-tilt
+            data-tilt-glare
+            onclick="changeDisplay('content4')"
+          >
             <div class="card-image">
               <img src="./assets/images/light dragon.jpg" />
             </div>
             <h3>Rise of the light</h3>
           </a>
-          <a href="#content5" class="card" data-tilt data-tilt-glare>
+          <a
+            href="#content5"
+            class="card"
+            data-tilt
+            data-tilt-glare
+            onclick="changeDisplay('content5')"
+          >
             <div class="card-image">
               <img src="./assets/images/TreeOFtheGodness.jpg" />
             </div>
             <h3>Tree of Eternity</h3>
           </a>
-          <a href="#content5" class="card" data-tilt data-tilt-glare>
+          <a
+            href="#content5"
+            class="card"
+            data-tilt
+            data-tilt-glare
+            onclick="changeDisplay('content5')"
+          >
             <div class="card-image">
               <img src="./assets/images/TreeOFtheGodness.jpg" />
             </div>
@@ -233,11 +275,11 @@
       function changeDisplay(id) {
         let itemList = window.document.getElementsByClassName("content");
 
-        for (let index = 0; index < itemList.length; index++) {
-          if (itemList[index].id != id) {
-            itemList[index].style.display = "none";
+        for (let i = 0; i < itemList.length; i++) {
+          if (itemList[i].id != id) {
+            itemList[i].style.display = "none";
           } else {
-            itemList[index].style.display = "block";
+            itemList[i].style.display = "block";
           }
         }
       }
