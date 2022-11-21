@@ -21,8 +21,45 @@ nav {
 }
 
 main {
-  .content {
+  .wrapper{
+    max-width: 1000px;
+    position: relative;
+    #left{
+      left: -23px;
+    }
+    #right{
+      right: -23px;
+    }
+    .arrowbtn{
+      position: absolute;
+      height: 45px;
+      width: 45px;
+      background-color: $cor-secundaria;
+      border-radius: 50%;
+      top: 50%;
+      font-size: 2rem;
+      line-height: 45px;
+      text-align: center;
+      color: $cor-primaria;
+      transform: translateY(-50%);
+      transition: transform 0.25s;
+      z-index: 1;
+      cursor: pointer;
+      &:hover{
+        transform:translateY(-50%) scale(1.3);
+      }
+    }
     
+  }
+  .wrapper .carousel{
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .carousel{
+    width: 100%;
+  }
+
+  .content {
     background-color: $cor-secundaria;
     padding-bottom: 100px;
     h2{
@@ -64,6 +101,7 @@ footer {
   width: 1024;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 30px 5%;
 }
 
@@ -71,5 +109,4 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
 }

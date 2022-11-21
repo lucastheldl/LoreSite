@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/images/pixel art logo.png" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <title>Nevull</title>
+    <!--Font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Nevull Stories</title>
   </head>
 
   <body>
@@ -41,72 +50,55 @@
 
     <main class="container">
       <!--Cards-->
-      <section class="row" id="stories">
-        <a
-          href="#content"
-          class="card"
-          data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="1.1"
-          onclick="changeDisplay('content')"
-        >
-          <div class="card-image">
-            <img src="./assets/images/ChaosDragMin.jpg" />
-          </div>
-          <h3>Chaos Rush</h3>
-        </a>
-        <a
-          href="#content2"
-          class="card"
-          data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="1.1"
-          onclick="changeDisplay('content2')"
-        >
-          <div class="card-image">
-            <img src="./assets/images/tellarrebelion.jpg" />
-          </div>
-          <h3>TellarRebelion</h3>
-        </a>
-        <a
-          href="#content3"
-          class="card"
-          data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="1.1"
-          onclick="changeDisplay('content3')"
-        >
-          <div class="card-image">
-            <img src="./assets/images/UltimateDinoFinal_2.jpg" />
-          </div>
-          <h3>Dinasvora</h3>
-        </a>
-        <a
-          href="#content4"
-          class="card"
-          data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="1.1"
-          onclick="changeDisplay('content4')"
-        >
-          <div class="card-image">
-            <img src="./assets/images/light dragon.jpg" />
-          </div>
-          <h3>Rise of the light</h3>
-        </a>
-        <a
-          href="#content5"
-          class="card"
-          data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="1.1"
-          onclick="changeDisplay('content5')"
-        >
-          <div class="card-image">
-            <img src="./assets/images/TreeOFtheGodness.jpg" />
-          </div>
-          <h3>Tree of Eternity</h3>
-        </a>
+      <section class="wrapper" id="stories">
+        <i class="fa-solid fa-chevron-left arrowbtn" id="left"></i>
+
+        <div class="carousel row">
+          <a href="#content" class="card" data-tilt data-tilt-glare>
+            <div class="card-image">
+              <img src="./assets/images/ChaosDragMin.jpg" />
+            </div>
+            <h3>Chaos Rush</h3>
+          </a>
+          <a href="#content2" class="card" data-tilt data-tilt-glare>
+            <div class="card-image">
+              <img src="./assets/images/tellarrebelion.jpg" />
+            </div>
+            <h3>TellarRebelion</h3>
+          </a>
+          <a href="#content3" class="card" data-tilt data-tilt-glare>
+            <div class="card-image">
+              <img src="./assets/images/UltimateDinoFinal_2.jpg" />
+            </div>
+            <h3>Dinasvora</h3>
+          </a>
+          <a href="#content4" class="card" data-tilt data-tilt-glare>
+            <div class="card-image">
+              <img src="./assets/images/light dragon.jpg" />
+            </div>
+            <h3>Rise of the light</h3>
+          </a>
+          <a href="#content4" class="card" data-tilt data-tilt-glare>
+            <div class="card-image">
+              <img src="./assets/images/light dragon.jpg" />
+            </div>
+            <h3>Rise of the light</h3>
+          </a>
+          <a href="#content5" class="card" data-tilt data-tilt-glare>
+            <div class="card-image">
+              <img src="./assets/images/TreeOFtheGodness.jpg" />
+            </div>
+            <h3>Tree of Eternity</h3>
+          </a>
+          <a href="#content5" class="card" data-tilt data-tilt-glare>
+            <div class="card-image">
+              <img src="./assets/images/TreeOFtheGodness.jpg" />
+            </div>
+            <h3>Tree of Eternity</h3>
+          </a>
+        </div>
+
+        <i class="fa-solid fa-angle-right arrowbtn" id="right"></i>
       </section>
       <!--End Cards-->
 
@@ -118,24 +110,28 @@
           </div>
           <h3>Chaos Rush</h3>
         </a>
+
         <a href="#content2" class="stack" onclick="changeDisplay('content2')">
           <div class="card-image">
             <img src="./assets/images/stack-4.jpg" />
           </div>
           <h3>TellarRebelion</h3>
         </a>
+
         <a href="#content3" class="stack" onclick="changeDisplay('content3')">
           <div class="card-image">
             <img src="./assets/images/stack-5.jpg" />
           </div>
           <h3>Dinasvora</h3>
         </a>
+
         <a href="#content4" class="stack" onclick="changeDisplay('content4')">
           <div class="card-image">
             <img src="./assets/images/stack-1.jpg" />
           </div>
           <h3>Rise of the light</h3>
         </a>
+
         <a href="#content5" class="stack" onclick="changeDisplay('content5')">
           <div class="card-image">
             <img src="./assets/images/stack-3.jpg" />
@@ -216,6 +212,7 @@
     </footer>
 
     <script type="text/javascript" src="./assets/js/vanilla-tilt.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
     <script>
       let stars = window.document.querySelector("img#stars");
       let back = window.document.querySelector("img#background");
