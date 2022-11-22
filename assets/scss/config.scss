@@ -110,3 +110,12 @@ footer {
   flex-direction: row;
   align-items: center;
 }
+body::-webkit-scrollbar{
+  width: 0.8rem;
+}
+body::-webkit-scrollbar-track{
+  background: $cor-secundaria;
+}
+body::-webkit-scrollbar-thumb{
+  background: rgb(131, 131, 131);
+}

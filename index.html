@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -200,7 +200,7 @@
           TellarRebels are a team of galactic warriors who have combined their
           great powers and abilities to initiate a rebellion and take control of
           the galaxy.<br /><br />
-          -After battling tousands and thousands of enemies in the imperial
+          -After battling thousands and thousands of enemies in the imperial
           mothership, the tellarebels manage to defeat the dark king, and who
           deals the finish blow would become the new king,suddenly a spear is
           launched from behind everyone and kills the king... It was Fuwen he
@@ -255,34 +255,5 @@
 
     <script type="text/javascript" src="./assets/js/vanilla-tilt.js"></script>
     <script type="text/javascript" src="./assets/js/script.js"></script>
-    <script>
-      let stars = window.document.querySelector("img#stars");
-      let back = window.document.querySelector("img#background");
-      let mBack = window.document.querySelector("img#character");
-      //let text = window.document.querySelector("h2#text")
-      //let btn = window.document.querySelector("a#btn")
-      let mFront = window.document.querySelector("img#foreground");
-      // let header = window.document.querySelector("header")
-
-      window.addEventListener("scroll", function () {
-        let value = window.scrollY;
-        stars.style.left = value * 0.25 + "px";
-        back.style.top = value * 0.8 + "px";
-        mBack.style.top = value * 0.5 + "px";
-        mFront.style.top = value * 0 + "px";
-      });
-
-      function changeDisplay(id) {
-        let itemList = window.document.getElementsByClassName("content");
-
-        for (let i = 0; i < itemList.length; i++) {
-          if (itemList[i].id != id) {
-            itemList[i].style.display = "none";
-          } else {
-            itemList[i].style.display = "block";
-          }
-        }
-      }
-    </script>
   </body>
 </html>
