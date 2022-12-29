@@ -41,3 +41,37 @@ function changeDisplay(id) {
     }
   }
 }
+function createHtmlElements(res) {
+  const contentElements = document.querySelectorAll(".content");
+
+  for (let i = 0; i < contentElements.length; i++) {
+    let title = document.createElement("h2");
+    let textStory = document.createElement("p");
+
+    //let replacedText = res.stories[i].content.replace("\n", "<br/>");
+
+    title.innerHTML = res.stories[i].title;
+    textStory.innerHTML = res.stories[i].content;
+
+    contentElements[i].append(title);
+    contentElements[i].append(textStory);
+  }
+}
+
+const loadJsonStories = () => {
+  let ajax = new XMLHttpRequest();
+
+  ajax.open(`GET`, `./assets/data/db.json`);
+  ajax.onreadystatechange = function () {
+    if (ajax.status === 200 && ajax.readyState === 4) {
+      let res = JSON.parse(ajax.responseText);
+      createHtmlElements(res);
+      console.log(res.stories);
+    } else {
+      console.log(ajax.status);
+    }
+  };
+  ajax.responseType = "text";
+  ajax.send();
+};
+loadJsonStories();
